@@ -10,4 +10,3 @@
 
 void Welcome();
 int randomNumberGenerator(int min, int max);
-int CheckingForNumberOfWords(int* totalWords,  int* NumbeNumberOfQuestionsrOfWords);
