@@ -15,18 +15,5 @@ go:
 	return number;
 }
 
-int CheckingForNumberOfWords(int *totalWords,  int * NumberOfQuestions) {
-
-	if ((*totalWords) >= (*NumberOfQuestions)) {
-		//log("[INFO] Word Array redy");
-		return 1;
-	}
-	else {
-		log("[INFO] Add " << *NumberOfQuestions - *totalWords << " More Words To Start.");
-		return 0;
-	}
-
-}
-
 
 
