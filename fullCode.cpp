@@ -9,11 +9,15 @@
 
 void Welcome();
 int randomNumberGenerator(int min, int max);
-int CheckingForNumberOfWords(int* totalWords,  int* NumbeNumberOfQuestionsrOfWords);
 
 void Welcome() {
 	log("---SHUFFLE GAME---");
 }
+
+	if (totalWords < NumberOfQuestions) {
+		log("need to add more words");
+		return 0;
+	}
 
 int randomNumberGenerator(int min, int max) {
 	min--;
@@ -26,18 +30,7 @@ go:
 	return number;
 }
 
-int CheckingForNumberOfWords(int *totalWords,  int * NumberOfQuestions) {
 
-	if ((*totalWords) >= (*NumberOfQuestions)) {
-		//log("[INFO] Word Array redy");
-		return 1;
-	}
-	else {
-		log("[INFO] Add " << *NumberOfQuestions - *totalWords << " More Words To Start.");
-		return 0;
-	}
-
-}
 
 int NumberOfQuestions =5;
 const int WorldLenght = 10;
