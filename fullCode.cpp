@@ -14,10 +14,7 @@ void Welcome() {
 	log("---SHUFFLE GAME---");
 }
 
-	if (totalWords < NumberOfQuestions) {
-		log("need to add more words");
-		return 0;
-	}
+
 
 int randomNumberGenerator(int min, int max) {
 	min--;
@@ -49,10 +46,10 @@ int main() {
 	RANDOM 
 	Welcome();
 
-	if (!CheckingForNumberOfWords(&totalWords, &NumberOfQuestions)) { 
+		if (totalWords < NumberOfQuestions) {
+		log("need to add more words");
 		return 0;
 	}
-
 	for(int i = 0; i< NumberOfQuestions; i++) {
    
 	to:
